@@ -6,12 +6,11 @@ int main(){
     bool check;
     cout << "Enter the card number : " ;
     cin >> n;
-    if(n<13 || n>16)
-    {
-        cout << "Enter a valid number" << endl;
+        int array[n];
+        for (int i = 0; i <n; i++) {
+        array[i] = n % 10;
+        n /= 10;
     }
-    else{
-        
-    }
+    
     return 0;
 }
