@@ -1,16 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
-
 int main(){
-    int n;
-    bool check;
-    cout << "Enter the card number : " ;
+    string n;
+    cout << "Enter card number digit by digit: " << "";
     cin >> n;
-        int array[n];
-        for (int i = 0; i <n; i++) {
-        array[i] = n % 10;
-        n /= 10;
-    }
-    
+    int size=n.length();
+    cout << size;
     return 0;
 }
